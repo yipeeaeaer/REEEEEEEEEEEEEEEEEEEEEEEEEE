@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fefefe;
+  color: rgb(57, 57, 57);
+  font-family: 'Lucida Console', monospace;
+}
+
+.clock {
+  font-size: 5rem;
+}
