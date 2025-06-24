@@ -10,4 +10,6 @@ body {
 
 .clock {
   font-size: 5rem;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
 }
