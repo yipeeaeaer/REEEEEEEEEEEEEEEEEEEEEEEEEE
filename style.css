@@ -3,13 +3,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #fefefe;
-  color: rgb(57, 57, 57);
-  font-family: 'Lucida Console', monospace;
+  margin: 0;
+  background: #111;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
 }
 
 .clock {
   font-size: 5rem;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
